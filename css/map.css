@@ -1,0 +1,185 @@
+/* map.css */
+ html, body, .olmap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+.windfarm-edit-box              { display: none; }
+
+.map-info {
+    z-index:-0;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color:#595958;
+    font-size: 0.8em;
+    color: #a3a0a2;
+    width: 198px;
+    padding:0px 5px;
+    display: block;
+    }
+
+.map {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 96px solid #ff0000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-sizing: border-box;
+    z-index: 0;
+    }
+
+.ui-button {
+    cursor: pointer;
+    user-select: none;
+    }
+
+.plan-monitor {
+    position: absolute;
+    background-color: #454546;
+    border-radius: 5px;
+    width: 252px;
+    padding: 4px;
+    right:18px;
+    top: 36px;
+    z-index: 9980;
+    }
+
+header.monitorheader {
+    position:relative;	
+    background-color: transparent;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    }
+
+.monitorheader h3               { font-size: 1em; color:#a3a0a2; }
+
+.plan-item {
+    background-color: #595958;
+    color: #fff;
+    margin: 1px 0px;
+    padding: 3px 6px;
+    display: flex;
+    }
+
+.plan-item dt {
+    width: 100%;
+    max-width: 108px;
+    }
+
+.plan-item .info-button {
+	background: transparent url(/grfx/legend-buttons-sprite.png) no-repeat 0px -40px;
+    background-size: auto 120px;
+	border: 0;
+	color: transparent;
+	overflow: hidden;
+	cursor: pointer;
+	display: inline-block;
+	outline: none;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+    }
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    }
+
+.buttons-container p {
+    margin: 0;
+    padding: 0;
+    }
+
+.total-energy-production,
+.total-maintenance-windfarm {
+    font-weight: 600;
+    }
+
+.buttons-container .windfarm-toggle,
+.buttons-container .energy-production {
+    height: auto;
+    }
+
+.buttons-container .windfarm-toggle img,
+.buttons-container .maintenance-windfarm img,
+.buttons-container .energy-production img {
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 5px;
+    }
+
+.buttons-container .energy-production img {
+    height: 50px;
+    }
+
+.edit-btns {
+  /* float:right;
+  margin-right:10px;
+  margin-top:15px; */
+    }
+
+.add-feature, .edit-feature, .move-feature, .remove-feature, .identify-feature {
+    background-color: #fff;
+    color: transparent;
+    width: 24%;
+    height: 36px;
+    overflow: hidden;
+    /* float:left;
+    border:1px solid #ccc;
+    margin-right:10px;
+    padding:5px 10px; */
+    cursor:pointer;
+    }
+
+.add-feature:before, .edit-feature:before, .move-feature:before, .remove-feature:before, .identify-feature:before {
+    content:"";
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 36px;
+    display:inline-block;
+    width:100%;
+    height:36px;
+    margin:auto;
+    }
+
+.add-feature:before             { background-image: url(/grfx/add-icon.png); }
+.edit-feature:before            { background-image: url(/grfx/edit-icon.png);  }
+.move-feature:before            { background-image: url(/grfx/move-icon.png);  }
+.remove-feature:before          { background-image: url(/grfx/remove-icon.png); }
+.identify-feature::before       { background-image: url(/grfx/identify-icon.png); }
+
+.tool-active                    { background-color:#ff00ff; }
+
+.energy-production-icon {
+    height: auto;
+    width: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.map-position {
+    background: url(/grfx/position-icon.png) no-repeat 0px center;
+    background-size: auto 16px;
+    padding-left: 24px;
+    }
+  
+#show_measure_box {
+    background-color: #a3a0a2;
+    color: #454546;
+    width: 126px;
+    margin-left: -132px;  
+    float: left;
+    }  
+
+#show_measure_box span          { padding: 3px 10px; }

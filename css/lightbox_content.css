@@ -1,0 +1,161 @@
+/* GENERAL */
+
+@import url(reset.css);
+
+body							{ background-color: #454546; }
+body, td {
+	font-family: "Roboto",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	color: #fff;
+	line-height: 1.6em;
+	}
+
+a 								{ color: #ff00ff; text-decoration:none; outline: 0; }
+a:hover 						{ color:#566b84; }
+
+header {
+	display: none;
+	}
+
+
+#interest-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+
+.interest-block {
+	width: 33%;
+	/* margin-bottom: 36px; */
+	}
+
+.interest-block h2 {
+	font-weight: normal;
+	font-size: 1.2em;
+	margin-bottom: 18px;
+	}
+
+.interest-block ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	}
+
+.interest-block ul li {
+	position: relative;
+	border: 1px solid #a3a0a2;
+	text-align: center;
+	width: 100%;
+	max-width: 32%;
+	height: 144px;
+	padding: 20px;
+	}
+
+.main-block ul li > span {
+	position: absolute;
+	font-weight: 700;
+	font-size: 1.2em;
+	text-align: left;
+	text-transform: uppercase;
+	left: 2px;
+	bottom: 0px;
+	z-index: 2;
+	}
+
+.interest-block.main-block		{ width: 100%; cursor: pointer; }
+.interest-block.main-block h1 {
+	font-weight: normal;
+	font-size: 1.4em;
+	text-align: center;
+	margin-bottom: 18px;
+	}
+
+.main-block ul li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+.main-block ul .i-energy		{ background-image: url(/grfx/energy-background.jpg); }
+.main-block ul .i-ecology		{ background-image: url(/grfx/ecology-background.jpg); }
+.main-block ul .i-shipping		{ background-image: url(/grfx/shipping-background.jpg); }
+	
+.main-block ul li:after {
+	content: '';
+	position: absolute;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.0) 50%, rgba(0,0,0,1) 100%); /* FF */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.0) 50%,rgba(0,0,0,1) 100%); /* Chrome */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.0) 50%,rgba(0,0,0,1) 100%); /* other */
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0px;
+	left: 0px;
+	}
+
+.main-block ul li:before {
+	content: '';
+	background-color: #ff00ff;
+	background-image: url(/grfx/interest-sprite.png);
+	background-repeat: no-repeat;
+	background-size: auto 200px;
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: 0px auto 18px auto;
+	display: block;
+	z-index: 2;
+	}
+
+.main-block ul .i-energy:before		{ background-position: center 6px; }
+.main-block ul .i-ecology:before	{ background-position: center -60px; }
+.main-block ul .i-shipping:before	{ background-position: center -126px; }
+
+.interest-block.expert-block		{ width: 100%; }
+
+.expert-block ul li 			{ border: 0px; color: #ff00ff; }
+.expert-block ul li span 		{ cursor: pointer; }
+.expert-block ul li:before { 
+	content: '';
+	width: 36px;
+	margin: 0px auto 0px auto;
+	display: block;
+	}
+
+.help-block						{ width: 100%; }
+
+.tutorial {
+	background: url(/grfx/tutorial-background.jpg) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	}
+
+.tutorial:after {
+	content: '';
+	position: absolute;
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.0) 0%, rgba(0,0,0,1) 100%); /* FF */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.0) 0%,rgba(0,0,0,1) 100%); /* Chrome */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.0) 0%,rgba(0,0,0,1) 100%); /* other */
+	width: 100%;
+	height: 100%;
+	display: block;
+	top: 0px;
+	left: 0px;
+	}
+	
+
+.tutorial > span {
+	position: absolute;
+	font-weight: 700;
+	font-size: 1.2em;
+	text-align: left;
+	text-transform: uppercase;
+	left: 2px;
+	bottom: 0px;
+	z-index: 2;
+	}
+
+
+/* --------------------------------------- */
+/* mediaqueries css */
+/* --------------------------------------- */

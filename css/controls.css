@@ -1,0 +1,113 @@
+/* tools.css */
+.controls {
+	position: fixed;
+	background-color: #595958;
+	width: 198px;
+	right: 0px;
+	z-index: 2;
+	bottom:28px;
+	}
+
+.mapzoom-controls {
+    position: fixed;
+	top: 85px;
+	right: 80px;
+    z-index: 1;
+    opacity: 0.8;
+    background-color: #009fe3;
+	}
+
+.mapcontrols {
+	list-style: none;
+	display: flex;
+	}
+
+.mapcontrols li, .mapzoom-controls li  {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 24px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	}
+
+.mapzoom-controls li {
+	border:2px solid #fff;
+	background-color: #566b84;
+	margin-bottom:0px;
+	padding: 25px 26px;
+	float:left;
+	}
+
+.mapzoom-controls li:last-child { border-left:0px; }
+
+.mc-zoom-in						{ background-image: url(/grfx/mapcontrols-zoom.png); }
+.mc-zoom-out					{ background-image: url(/grfx/mapcontrols-zoom-out.png); }
+.mc-search						{ background-image: url(/grfx/mapcontrols-search.png); }
+.mc-layers						{ background-image: url(/grfx/mapcontrols-layers.png); }
+.mc-identifier					{ background-image: url(/grfx/mapcontrols-identifier.png); }
+.mc-distance					{ background-image: url(/grfx/mapcontrols-distance.png); }
+.mc-bounding-box         		{ background-image: url(/grfx/mapcontrols-bounding-box.png); }
+.mc-help						{ background-image: url(/grfx/mapcontrols-help.png); }
+.mc-legend						{ background-image: url(/grfx/mapcontrols-legend.png); }
+.mc-index						{ background-image: url(/grfx/mapcontrols-index.png); }
+.mc-position					{ background-image: url(/grfx/mapcontrols-position.png); }
+.map-reset						{ background-image: url(/grfx/mapcontrols-reset.png); }
+.mc-download					{ background-image: url(/grfx/mapcontrols-download.png); }
+.mc-switch						{ background-image: url(/grfx/mapcontrols-switch.png); }
+
+.mapcontrols li:hover 			{ border-color:#fff;  }
+.mapcontrols li.tool-active   	{ background-color:#ff00ff; }
+.mapzoom-controls li:hover		{ opacity:0.8; }
+
+.additional-mapcontrols {
+	position: absolute;
+	list-style: none;
+	width: 90px;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+	}
+
+.additional-mapcontrols li {
+	background-image: url(/grfx/mapcontrols.png);
+	background-repeat: no-repeat;
+	background-size: 100px auto;
+	width: 43px;
+	height: 36px;
+	margin-right: 1px;
+	display: inline-block;
+	cursor: pointer;
+	}
+
+.ol-overviewmap 				{ right:4em !important; bottom:2em !important; }
+
+/* arko temp */
+.ol-custom-overviewmap,
+.ol-custom-overviewmap.ol-uncollapsible {
+	bottom: 50px;
+	left: auto !important;
+	right: 58px;
+	top: auto;
+	}
+
+.ol-custom-overviewmap .ol-overviewmap-map {
+	border: none;
+	width: 200px !important;
+	height: 200px !important;
+	}
+
+.ol-custom-overviewmap .ol-overviewmap-box {
+	border: 2px solid red;
+	}
+
+/* hide standard button */
+.ol-custom-overviewmap button {
+	display: none !important;
+	}
+
+
+/* --------------------------------------- */
+/* mediaqueries css */
+/* --------------------------------------- */

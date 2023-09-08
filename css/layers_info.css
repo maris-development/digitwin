@@ -1,0 +1,47 @@
+@import url(reset.css);
+
+body, td {
+	font-family: "Roboto",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	color: #a3a0a2;
+	line-height: 1.6em;
+	}
+
+a                               { color: #fff; text-decoration: none; }
+
+.info-content                   { padding: 20px; }
+.info-content h1                { color: #fff; margin-bottom: 36px; }
+.info-content p                 { margin-bottom: 36px; }
+
+.info-content dl {
+    margin-bottom: 18px;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.info-content dl:nth-child(odd) {
+    background-color: #a3a0a2;
+    color: #454546;
+}
+
+.info-content dt {
+    width: 100%;
+    max-width: 25%;
+}
+
+.info-content dd {
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+  
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    flex-grow: 1;
+}

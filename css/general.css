@@ -1,0 +1,70 @@
+/* GENERAL */
+
+@import url(reset.css);
+
+body							{ background-color: #fff; }
+body, td {
+	font-family: "Roboto",Helvetica,Arial,sans-serif;
+	font-size: 1em;
+	color: #a3a0a2;
+	line-height: 1.6em;
+	}
+
+a 								{ color: #009fe3; text-decoration:none; outline: 0; }
+a:hover 						{ color:#566b84; }
+
+header {
+	background-color: #454546;
+	width: 96px;
+	height: 100vw;
+	position:fixed;
+	z-index:9;
+	}
+
+.brand-logo {
+	background: url(/grfx/logo.png) #fff no-repeat center center;
+	background-size: 90px auto;
+	width: 96px;
+	height: 72px;
+	}
+
+.categories ul					{ list-style: none; }
+.categories ul li {
+	background-image: url(/grfx/categories-sprite.png);
+	background-repeat: no-repeat;
+	background-size: auto 600px;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1.1em;
+	height: 90px;
+	padding-top: 54px;
+	cursor: pointer;
+
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+	}
+
+.categories ul li.cat1			{ background-position: center 0px; }
+.categories ul li.cat2			{ background-position: center -100px; padding-top: 48px; }
+.categories ul li.cat3			{ background-position: center -200px; }
+
+.active {
+	background-color: #ff00ff;
+	color: #454546;
+	}
+
+.categories ul li.cat1.active	{ background-position: center -300px; }
+.categories ul li.cat2.active	{ background-position: center -400px; padding-top: 48px; }
+.categories ul li.cat3.active	{ background-position: center -500px; }
+
+
+
+.energy-production {  z-index:999999999999999999px;}
+
+/* --------------------------------------- */
+/* mediaqueries css */
+/* --------------------------------------- */

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>DigiTwin</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="/css/general.css?v=20191125T022500" />
+		<link rel="stylesheet" type="text/css" href="/css/layers.css?v=20191125T022500" />
+		<link rel="stylesheet" type="text/css" href="/css/controls.css?v=20191125T022500" />
+		<link rel="stylesheet" type="text/css" href="/css/popup.css?v=20191125T022500" />
+		<link rel="stylesheet" type="text/css" href="/css/lightbox_content.css"/>
+
+		<link type="text/css" rel="stylesheet" href="/css/jquery.pagewalkthrough.css" />
+        <script type="text/javascript" src="/java/jquery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="/js/getstarted.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@turf/turf@5/turf.min.js"></script>
+<script type="text/javascript" src="/java/ol6.1.1/ol.js"></script>
+<link rel="stylesheet" href="/java/ol6.1.1/ol.css" />
+<script type="text/javascript" src="/java/maris_ol_6.1.1/map_functions.js?v=20191125T022500"></script>
+<script type="text/javascript" src="/java/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/java/standard/mlb.js"></script>
+<script type="text/javascript" src="/js/map.js?v=20191125T022500"></script>
+<script type="text/javascript" src="/java/jquery/jquery-ui-1.10.4.custom.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.pagewalkthrough.js"></script>
+
+	</head>
+
+	<body>
+
+		<div style="display:none">
+			<div id="step1-welcome">
+				<span style="font-size: 1.88em;">Welcome to the Digitwin tour</span>
+				<p>Check out the highlights and learn what you can do with the map</p>
+			</div>
+			<div id="step2-welcome">
+				<span style="font-size: 1.88em;">Step 2: Choose your interest</span>
+				<p>Text here ...</p>
+			</div>
+			<div id="step3-welcome">
+				<span style="font-size: 1.88em;">Step 3: Legend</span>
+				<p>Text here ...</p>
+			</div>
+			<div id="step4-welcome">
+				<span style="font-size: 1.88em;">Step 4: Categories</span>
+				<p>Text here ...</p>
+			</div>
+			<div id="step5-welcome">
+				<span style="font-size: 1.88em;">Step 5: Plan monitor</span>
+				<p>Text here ...</p>
+			</div>
+			<div id="step6-welcome">
+				<span style="font-size: 1.88em;">Step 6: Map control</span>
+				<p>Text here ...</p>
+			</div>
+		</div>	
+
+		<header>
+			<div id="topbar">
+				<div class="wrapper">
+					<div class="brand-logo"></div>
+				</div>
+			</div>
+		</header>
+
+		<div id="main">
+			<div class="wrapper">
+				<div id="content">
+
+					<div id="interest-container">
+						<div class="interest-block main-block">
+							<h1>What is your main interest?</h1>
+							<ul>
+								<li class="i-energy interest-button" data-interest="energy" data-mode="base"><span>Energy</span></li>
+								<li class="i-ecology interest-button" data-interest="ecology" data-mode="base"><span>Ecology</span></li>
+								<li class="i-shipping interest-button" data-interest="shipping_and_fishing" data-mode="base"><span>Shipping / Fishing</span></li>
+							</ul>
+						</div>
+						<div class="interest-block expert-block">
+							<ul>
+								<li class="interest-button" data-interest="energy" data-mode="expert"><span>I am an expert</span></li>
+								<li class="interest-button" data-interest="ecology" data-mode="expert"><span>I am an expert</span></li>
+								<li class="interest-button" data-interest="shipping_and_fishing" data-mode="expert"><span>I am an expert</span></li>
+							</ul>
+						</div>
+						<div class="interest-block help-block">
+							<h2>Quick help</h2>
+							<ul>
+								<li class="tutorial"><span>Start tutorial</span></li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+<script>
+    function close_mlb(){
+        $('.mlb-close').click();
+    }
+    $(document).ready(function(){
+    
+        $('body').pagewalkthrough({
+            name: "digitwin-"+ Math.floor((Math.random() * 1e6) + 1),
+            onLoad: true,
+            onCookieLoad: $.noop,
+            steps:
+                [
+                    {
+                        wrapper: '',
+                        margin: 0,
+                        popup:
+                            {
+                                content: '#step1-welcome',
+                                type: 'modal',
+                                offsetHorizontal: 0,
+                                offsetVertical: 0,
+                                width: '400'
+                            }
+                    }, {
+                        wrapper: '#mlb_container',
+                        margin: 0,
+                        onEnter: get_started,
+                        popup:
+                            {
+                                content: '#step2-welcome',
+                                type: 'tooltip',
+                                position: 'top',
+                                offsetHorizontal: 0,
+                                offsetVertical: 0,
+                                width: '400'
+                            }
+                    }, {
+                        wrapper: '.legendbox',
+                        onEnter: close_mlb,
+                        margin: 0,
+                        popup:
+                            {
+                                content: '#step3-welcome',
+                                type: 'tooltip',
+                                position: 'right',
+                                offsetHorizontal: 0,
+                                offsetVertical: 0,
+                                width: '400'
+                            }
+                    }, {
+                        wrapper: '.categories',
+                        margin: 0,
+                        popup:
+                            {
+                                content: '#step4-welcome',
+                                type: 'tooltip',
+                                position: 'right',
+                                offsetHorizontal: 0,
+                                offsetVertical: 0,
+                                width: '400'
+                            }
+                    }, {
+                        wrapper: '.plan-monitor',
+                        margin: 0,
+                        popup:
+                            {
+                                content: '#step5-welcome',
+                                type: 'tooltip',
+                                position: 'left',
+                                offsetHorizontal: 0,
+                                offsetVertical: 0,
+                                width: '400'
+                            }
+                    }, {
+                        wrapper: '.mapcontrols',
+                        margin: 0,
+                        popup:
+                            {
+                                content: '#step6-welcome',
+                                type: 'tooltip',
+                                position: 'left',
+                                offsetHorizontal: 0,
+                                offsetVertical: -50,
+                                width: '400'
+                            }
+                    }
+                ],
+            onClose: get_started,
+            buttons: {
+                jpwClose: {
+                // Translation string for the button
+                i18n: 'Close tour',
+                // Whether or not to show the button.  Can be a boolean value, or a
+                // function which returns a boolean value
+                show: true
+                }
+            }
+            
+    
+    
+        });
+    
+    });
+    </script>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,43 @@
+/* --------------------------------------- */
+/* Reset css */
+/* --------------------------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+address, em, img, small, strong, sub, sup,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, figcaption, figure,
+footer, header, menu, nav, section,
+audio, video {
+	margin: 0px;
+	padding: 0px;
+	outline: 0;
+	}
+
+html {
+	overflow: -moz-scrollbars-vertical; overflow-x: auto; overflow-y: auto; 
+	box-sizing: border-box;
+	}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	}
+
+/* clearfix */
+.clearfix:after {
+	content:"";
+	display:block;
+	clear:both;
+	height: 0;
+	visibility: hidden;
+	}
+
+.clearfix						{ display: inline-block; }
+* html .clearfix				{ height: 1%; }
+
+img								{ border: 0px; }
+.button							{ cursor: pointer; }
+
+.debug							{ color: #f00; display: block; }

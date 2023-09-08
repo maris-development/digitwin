@@ -1,0 +1,320 @@
+[
+    {
+        "title": "Anchor zones",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/verkeersscheidingsstelsel_nz/wms?service=WMS&version=1.1.0&request=GetMap&layers=verkeersscheidingsstelsel_nz:ankergebieden&styles=&bbox=466836,5686175,592146,5821908&width=709&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "Anchorages_EPSG28992",
+        "date": "2019/10",
+        "metadata": "The Rijkswaterstaat shipping separation scheme contains the data of shipping on the Dutch continental plate, anchorages, shipping routes, restrictions and zoning. Maps are made in cooperation with Dienst der Hydrografie. last update 2017-07-01. Checked 2019-10 by R. van 't Hart",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/5996e444-f7f3-40d2-b485-8b9af6e8aa89"
+    },
+    {
+        "title": "Bathymetry",
+        "original_source": "https://ows.emodnet-bathymetry.eu/wms",
+        "digitwin_wms": "https://ows.emodnet-bathymetry.eu/wms",
+        "layer_name": "emodnet:mean_rainbowcolour",
+        "date": "2018/05",
+        "metadata": "The EMODnet data products are based on the continuous average depth grid of one-sixteenth arc-minute. This grid is based on three source types: Individual bathymetric surveys, composite digital terrain data (cDTM) and Satellite-Derived Bathymetry. The latter two have been used whenever the actual survey data was unavailable for direct processing by the EMODnet partners. Whenever data were unavailable GEBCO data has been used to fill in the gaps.",
+        "metadata_url": "https://www.emodnet-bathymetry.eu/data-products/which-information-layers"
+    },
+    {
+        "title": "EEZ",
+        "original_source": "Adapted from http://www.marineregions.org/downloads.php#iceser",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "Dutch_EEZ_EPSG28992",
+        "date": "2016/10",
+        "metadata": "The dataset from http://www.marineregions.org/downloads.php#iceser combines the boundaries of the world countries and the Exclusive Economic Zones of the world. It was created by combining the ESRI world country database and the EEZ V7 dataset.",
+        "metadata_url": "???"
+    },
+    {
+        "title": "Electricity cables",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/kabels_en_leidingen_noordzee/wms?service=WMS&version=1.1.0&request=GetMap&layers=kabels_en_leidingen_noordzee:electra_kabels_noordzee&styles=&bbox=-256845,5323895,851254,6590614&width=671&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "electricity_cables",
+        "date": "2019/10",
+        "metadata": "Rijkswaterstaat hosts a WMS&WFS service called Elektra, telecom kabels op de Noordzee which is updated monthly. Last change was 2019-06-04. In this particular case, only the cables in use are shown. Checked 2019-10 by R. van 't Hart",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/66bacf5b-b5fa-4dce-aa31-1938f37f11c7"
+    },
+    {
+        "title": "Shipping routes",
+        "original_source": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/5996e444-f7f3-40d2-b485-8b9af6e8aa89",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "shipping_routes_epsg28992",
+        "date": "2019/10",
+        "metadata": "The Rijkswaterstaat shipping separation scheme contains the data of shipping on the Dutch continental plate, anchorages, shipping routes, restrictions and zoning. Maps are made in cooperation with Dienst der Hydrografie. last update 2017-07-01. Checked 2019-10 by R. van 't Hart",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/5996e444-f7f3-40d2-b485-8b9af6e8aa89"
+    },
+    {
+        "title": "Military areas (NL)",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/militaire_gebieden/ows",
+        "digitwin_wms": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/militaire_gebieden/ows",
+        "layer_name": "militaire_gebieden_nl",
+        "date": "",
+        "metadata": "Gebied op de Noordzee en Het Kanaal gebruikt voor het leggen en vegen van mijnen en militaire schietoefeningen met geschut zowel vanuit de kust als uit vliegtuigen (het omvat alle vlieggebieden, munitiegebieden, oefengebieden en schietterreinen)",
+        "metadata_url": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/militaire_gebieden/ows?service=WMS&request=getcapabilities&version=1.3.0"
+    },
+    {
+        "title": "Military areas (DE)",
+        "original_source": "https://www.geoseaportal.de/wss/service/CONTIS_Administration/guest",
+        "digitwin_wms": "https://www.geoseaportal.de/wss/service/CONTIS_Administration/guest",
+        "layer_name": "militaire_gebieden_de",
+        "date": "",
+        "metadata": "Data on all uses and nature conservation areas in the North Sea and in the Baltic Sea. Weitere Informationen unter: https://gdiwiki.bsh.de/wiki/index.php/CONTIS_Administration",
+        "metadata_url": "https://www.geoseaportal.de/wss/service/CONTIS_Administration/guest?service=WMS&request=getcapabilities&version=1.3.0"
+    },
+    {
+        "title": "Natura 2000",
+        "original_source": "http://geodata.nationaalgeoregister.nl/inspire/ps-natura2000/wms?request=getcapabilities",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "ez_lnv_natura2000_20180827",
+        "date": "2019/10",
+        "metadata": "ministry LNV, updated as needed, last update 2019-11-06",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/280ed37a-b8d2-4ac5-8567-04d84fad3a41"
+    },
+    {
+        "title": "No shipping zones",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/verkeersscheidingsstelsel_nz/wms?service=WMS&version=1.1.0&request=GetMap&layers=verkeersscheidingsstelsel_nz:separatiezones&styles=&bbox=466836,5686175,592146,5821908&width=709&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "no_shipping_zones_epsg28992",
+        "date": "2019/10",
+        "metadata": "The Rijkswaterstaat shipping separation scheme contains the data of shipping on the Dutch continental plate, anchorages, shipping routes, restrictions and zoning. Maps are made in cooperation with Dienst der Hydrografie. last update 2017-07-01. Checked 2019-10 by R. van 't Hart",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/5996e444-f7f3-40d2-b485-8b9af6e8aa89"
+    },
+    {
+        "title": "Oil & gas offshore platforms",
+        "original_source": "https://www.nlog.nl/kaart-boringen",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "Oil_Gas_Offshore_Instalations",
+        "date": "2019/10",
+        "metadata": "For all data that has been gathered during the process of exploration, identification, resource acquisition or storage of materials or geothermal heat, is the operator required to deliver a representative part of the data to the Ministry of Economical affairs (article 123 of the Mijnbouwwet). Chapter 7 of the Mijnbouwbesluit describes what data this applies to and what timeframe applies to it, whilst chapter 11 provides additional information.",
+        "metadata_url": "https://www.nlog.nl/kaart-boringen"
+    },
+    {
+        "title": "Pipelines",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/arcgis2/rest/services/GDR/kabels_en_leidingen_noordzee/MapServer\nor\nhttps://geoservices.rijkswaterstaat.nl/apps/geoserver/kabels_en_leidingen_noordzee/wms?service=WMS&version=1.1.0&request=GetMap&layers=kabels_en_leidingen_noordzee:pijpleidingen_noordzee&styles=&bbox=396281,5654044,825340,6790031&width=330&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "pijpleidingen_noordzee",
+        "date": "2019/10",
+        "metadata": "Rijkswaterstaat hosts a service called Pijpleidingen op de Noordzee which is updated monthly. Last change was 2019-04-17. It includes active, inactive and decommissioned pipelines.",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/0eb27b4f-cda3-4021-8d5a-cc761471cb9e"
+    },
+    {
+        "title": "Telecom cables",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/arcgis2/rest/services/GDR/kabels_en_leidingen_noordzee/MapServer\nor\nhttps://geoservices.rijkswaterstaat.nl/apps/geoserver/kabels_en_leidingen_noordzee/wms?service=WMS&version=1.1.0&request=GetMap&layers=kabels_en_leidingen_noordzee:telecom_kabels_noordzee&styles=&bbox=396281,5654044,825340,6790031&width=330&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "telecom_kabels_noordzee",
+        "date": "2019/10",
+        "metadata": "Rijkswaterstaat hosts a service called Elektra, telecom kabels op de Noordzee which is updated monthly. Last change was 2019-06-04. Checked 2019-10 by R. van 't Hart",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/66bacf5b-b5fa-4dce-aa31-1938f37f11c7"
+    },
+    {
+        "title": "Wind Farms Search Areas",
+        "original_source": "https://geoservices.rijkswaterstaat.nl/apps/geoserver/windenergiegebieden/wms?service=WMS&version=1.1.0&request=GetMap&layers=windenergiegebieden:overige_windenergie_studiegebieden&styles=&bbox=484037,5713104,702987,5996321&width=593&height=768&srs=EPSG:25831&format=application/openlayers",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "overige_windenergie_studiegebieden",
+        "date": "2019/09",
+        "metadata": "Wind energy study area",
+        "metadata_url": "https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/metadata/1ddc2091-243f-4457-bc90-429f865ef72c?tab=relations"
+    },
+    {
+        "title": "Windfarms after 2030",
+        "original_source": "informal information",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "development_after_2030",
+        "date": "2019/10",
+        "metadata": "Possible interesting search areas (informal information)",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Existing windfarms",
+        "original_source": "Adapted from https://odims.ospar.org/odims_data_files/ and merged with existing wind parks from NL: https://www.noordzeeloket.nl/en/up-date-atlas/",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "windfarm",
+        "date": "2017/10",
+        "metadata": "Details of the location and status of offshore renewable energy developments in the OSPAR region, combined with details from the Noordzeeloket for the Dutch EEZ (The last dataset is made from supplied and verified information from developers, after which these are recorded in permits).",
+        "metadata_url": "https://geoservices.rijkswaterstaat.nl/apps/geonetwork/srv/dut/catalog.search#/metadata/1ddc2091-243f-4457-bc90-429f865ef72c"
+    },
+    {
+        "title": "Powered households",
+        "original_source": "Asked source to maris",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "create wms at maris",
+        "date": "",
+        "metadata": "Households powered by the energy from selected windfarms according to algorithm Deltares (REF needed)"
+    },
+    {
+        "title": "Shipping Intensity",
+        "original_source": "https://ihm-pub.geopublisher.nl/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage;jsessionid=86FA6CD791AAFCA41448CBD375B83B9A?0",
+        "digitwin_wms": "https://ihm-pub.geopublisher.nl/geoserver/MARIN/wms",
+        "layer_name": "Marine_Traffic_2017",
+        "date": "2019/10",
+        "metadata": "Intensity of all shipping during 2017. Data collected by MARIN.",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Income from fishing",
+        "original_source": "WMR personal communication",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "DEM2008_2018",
+        "date": "2019/10",
+        "metadata": "Average value (in Euro) of the years 2008-2017 of all demersal / bottom fishing activity by the Dutch fleet calculated by WMR",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Harbor porpoise (spring)",
+        "original_source": "NZ2030_hp_pred_spri_NCP_Gilles&styles=hp_pred_spri_Gilles&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_hp_pred_spri_NCP_Gilles",
+        "date": "2019/10",
+        "metadata": "Seasonal habitat based density model for a marine top predator, the harbour porpoise, in a dynamic model. The data the model runs off is based from aerial observations  during the spring above the Dutch North Sea. Map by WMR",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Harbor porpoise (fall)",
+        "original_source": "NZ2030_hp_pred_fall_NCP_Gilles&styles=hp_pred_fall_Gilles&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_hp_pred_fall_NCP_Gilles",
+        "date": "2019/10",
+        "metadata": "Seasonal habitat based density model for a marine top predator, the harbour porpoise, in a dynamic model. The data the model runs off is based from aerial observations  during the fall above the Dutch North Sea. Map by WMR",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Harbor porpoise (summer)",
+        "original_source": "NZ2030_hp_pred_summ_NCP_Gilles&styles=hp_pred_summ_Gilles&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_hp_pred_summ_NCP_Gilles",
+        "date": "2019/10",
+        "metadata": "Seasonal habitat based density model for a marine top predator, the harbour porpoise, in a dynamic model. The data the model runs off is based from aerial observations  during the summer above the Dutch North Sea. Map by WMR",
+        "metadata_url": "not available"
+    },
+    {
+        "title": "Sharks and Rays Abundance",
+        "original_source": "https://marineprojects.openearth.eu/geoserver/digishape/wms?service=WMS&version=1.1.0&request=GetMap&layers=digishape:Elasmobranch_abundance_abs_4326&styles=&bbox=-16.05%2c35.95%2c23.05%2c62.05&width=768&height=512&srs=EPSG:4326&format=application/openlayers",
+        "digitwin_wms": "https://marineprojects.openearth.eu/geoserver/digishape/wms?",
+        "layer_name": "Elasmobranch_abundance_abs_4326",
+        "date": "2019/10",
+        "metadata": "Sharks and Rays fall under the group of 'Elasmobranch'. In fact, species abundance data of this group can be found in EMODnet Biology, data available as a tif file under the folder 'SharksRaysAbundance'. Original netCDF file with other species groups, Elasmobranches fall under the name group 4. In personal communication with Peter Herman, indeed it is recommended to view impact on biodiversity based on species groups as opposed to looking at specific species abundance.",
+        "metadata_url": "http://emodnet-biology.eu/distribution-fish-living-modes-european-seas"
+    },
+    {
+        "title": "StratificationRegime",
+        "original_source": "https://geo-service.maris.nl/digitwin/wms/",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wms",
+        "layer_name": "hydrodynamic_regions_4326",
+        "date": "2019/10",
+        "metadata": "Data from running model simulations in the North Sea by van Leeuwen et al., 2015",
+        "metadata_url": "https://www.researchgate.net/publication/323475056_North_Sea_Ecohydrodynamic_regions."
+    },
+    {
+        "title": "Shannon biodiversity indicator",
+        "original_source": "",
+        "digitwin_wms": "",
+        "layer_name": "",
+        "date": "",
+        "metadata": "derived from Simplified North Sea model for use in the MSP Challenge Simulation Platform based on Mackinson and Daskalov 2007 and ICES WGSAM 2015 Keyrun. \nEcospace based on Romagnoni et al 2015"
+    },
+    {
+        "title": "Razorbill",
+        "original_source": "NZ2030_Alk_Jaargem&styles=&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_Alk_Jaargem",
+        "date": "2019/10",
+        "metadata": "Presence of the Razorbill (n/km2) on the Dutch North Sea (year average; 1991-2014). More info on method and data: Leopold et al. (2014); A first approach to deal with cumulative effects on birds and bats of offshore wind farms and other human activities in the Southern North Sea. IMARES. Report C166/14",
+        "metadata_url": "https://library.wur.nl/WebQuery/wurpubs/fulltext/329714"
+    },
+    {
+        "title": "Lesser black-backed gull",
+        "original_source": "NZ2030_KlMntlmw_Jaargem&styles=&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_KlMntlmw_Jaargem",
+        "date": "2019/10",
+        "metadata": "Presence of the Lesser black-backed gull (n/km2) on the Dutch North Sea  (year average; 1991-2014). More info on method and data: Leopold et al. (2014); A first approach to deal with cumulative effects on birds and bats of offshore wind farms and other human activities in the Southern North Sea. IMARES. Report C166/14",
+        "metadata_url": "https://library.wur.nl/WebQuery/wurpubs/fulltext/329714"
+    },
+    {
+        "title": "birds sensitivity",
+        "original_source": "NZ2030_WSI22CMLbb2013&styles=&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_WSI22CMLbb2013",
+        "date": "2019/10",
+        "metadata": "Sensitivity of seabirds for offshore windturbines on the North Sea on a 5x5 km grid. The map integrates the sensitivity of different sea dependent birds, based on density of the species and vulnerability to collisions and disturbances. MinEZ en MinIenM (2015). Kader Ecologie en Cumulatie.",
+        "metadata_url": "https://www.noordzeeloket.nl/publish/pages/123314/kader_ecologie_en_cumulatie_t_b_v_uitrol_windenergie_op_zee_-_deelrapport_b_-_bijlage_imares_onderzo.pdf"
+    },
+    {
+        "title": "Guillemot",
+        "original_source": "NZ2030_Zeekoet_Jaargem&styles=&styles=&url=https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms?",
+        "digitwin_wms": "https://opengeodata.wmr.wur.nl/geoserver/WMRwms/wms",
+        "layer_name": "NZ2030_Zeekoet_Jaargem",
+        "date": "2019/10",
+        "metadata": "Presence of Guillemot (n/km2) on the Dutch North Sea (year average; 1991-2014). More info on method and data: Leopold et al. (2014); A first approach to deal with cumulative effects on birds and bats of offshore wind farms and other human activities in the Southern North Sea. IMARES. Report C166/14",
+        "metadata_url": "https://library.wur.nl/WebQuery/wurpubs/fulltext/329714"
+    },
+    {
+        "title": "Helicopter safety zones 2.5 nm in O&G platforms",
+        "original_source": "https://www.lvnl.nl/informatie-voor-luchtvarenden/publicaties-voor-luchtvarenden",
+        "digitwin_wms": "https://geo-service.maris.nl/digitwin/wfs",
+        "layer_name": "helipads",
+        "date": "",
+        "metadata": "Helipads with a 2.5NM safety radius"
+    },
+    {
+        "title": "birds migration routes",
+        "original_source": "",
+        "digitwin_wms": "",
+        "layer_name": "",
+        "date": "",
+        "metadata": ""
+    },
+    {
+        "title": "annual average of wind speed at 150m",
+        "original_source": "https://data.knmi.nl/datasets/KNW-NetCDF-3D/1.0?q=knw",
+        "digitwin_wms": "file too large (1.8TB), no api",
+        "layer_name": "",
+        "date": "",
+        "metadata": ""
+    },
+    {
+        "title": "average wave height",
+        "original_source": "http://marine.copernicus.eu/services-portfolio/access-to-products/?option=com_csw&view=details&product_id=GLOBAL_ANALYSIS_FORECAST_WAV_001_027",
+        "digitwin_wms": "CMEMS offers daily historic data, not an average over a period?",
+        "layer_name": "",
+        "date": "",
+        "metadata": ""
+    },
+    {
+        "title": "EUSeaMap (2019) Habitat Map - EUNIS classification",
+        "original_source": "https://ows.emodnet-seabedhabitats.eu/emodnet_view/wms",
+        "digitwin_wms": "https://ows.emodnet-seabedhabitats.eu/emodnet_view/wms",
+        "layer_name": "eusm2019_group",
+        "date": "2019/01",
+        "metadata": "Output of the 2019 EUSeaMap broad-scale predictive model, produced by EMODnet Seabed Habitats. Habitat descriptors differ per region but include: Biological zone, Energy class, Oxygen regime, Salinity regime, Seabed substrate, Riverine input",
+        "metadata_url": "http://gis.ices.dk/geonetwork/srv/eng/catalog.search#/metadata/01bf1f24-fdcd-4ee7-af8b-e62cf72fe2f9"
+    },
+    {
+        "title": "seabed substrate 1:50K",
+        "original_source": "http://drive.emodnet-geology.eu:80/geoserver/gtk/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=gtk%3Aseabed_substrate_50k",
+        "digitwin_wms": "https://drive.emodnet-geology.eu/geoserver/gtk/wms",
+        "layer_name": "gtk:seabed_substrate_50k",
+        "date": "",
+        "metadata": "Seabed substrate map of the European marine areas including (e.g. the Baltic Sea, the Greater North Sea, the Celtic Sea, the Iberian Coast, and the Mediterranean Sea within EU waters) at various scales (50k, 100k, 250k, 1M). The map is collated and harmonized from seabed substrate information within the EMODnet-Geology III project. Where necessary, the existing seabed substrate classifications (of individual maps) have been translated to a scheme that is supported by EUNIS. This EMODnet reclassification scheme includes at least five seabed substrate classes. Four substrate classes are defined on the basis of the modified Folk triangle (mud to sandy mud; sand; coarse sediment; and mixed sediment) and one additional substrate class (rock and boulders) was included by the project team. If the original seabed substrate dataset has enabled more detailed substrate classification, classifications with 7 and 16 substrate classes might be available. The EMODnet-Geology III project started in 2017 with 39 marine departments of the geological surveys of Europe (from 30 countries), with an objective to assemble marine geological information from all European sea areas. The seabed substrate multiscale map was produced in March 2019. Note: The data may include some errors e.g. data discontinuities. Seabed substrate map of the European marine areas including (e.g. the Baltic Sea, the Greater North Sea, the Celtic Sea, the Iberian Coast, and the Mediterranean Sea within EU waters) at various scales (50k, 100k, 250k, 1M). The map is collated and harmonized from seabed substrate information within the EMODnet-Geology III project. Where necessary, the existing seabed substrate classifications (of individual maps) have been translated to a scheme that is supported by EUNIS. This EMODnet reclassification scheme includes at least five seabed substrate classes. Four substrate classes are defined on the basis of the modified Folk triangle (mud to sandy mud; sand; coarse sediment; and mixed sediment) and one additional substrate class (rock and boulders) was included by the project team. If the original seabed substrate dataset has enabled more detailed substrate classification, classifications with 7 and 16 substrate classes might be available. The EMODnet-Geology III project started in 2017 with 39 marine departments of the geological surveys of Europe (from 30 countries), with an objective to assemble marine geological information from all European sea areas. The seabed substrate multiscale map was produced in March 2019. Note: The data may include some errors e.g. data discontinuities. Seabed substrate map of the European marine areas including (e.g. the Baltic Sea, the Greater North Sea, the Celtic Sea, the Iberian Coast, and the Mediterranean Sea within EU waters) at various scales (50k, 100k, 250k, 1M). The map is collated and harmonized from seabed substrate information within the EMODnet-Geology III project. Where necessary, the existing seabed substrate classifications (of individual maps) have been translated to a scheme that is supported by EUNIS. This EMODnet reclassification scheme includes at least five seabed substrate classes. Four substrate classes are defined on the basis of the modified Folk triangle (mud to sandy mud; sand; coarse sediment; and mixed sediment) and one additional substrate class (rock and boulders) was included by the project team. If the original seabed substrate dataset has enabled more detailed substrate classification, classifications with 7 and 16 substrate classes might be available. The EMODnet-Geology III project started in 2017 with 39 marine departments of the geological surveys of Europe (from 30 countries), with an objective to assemble marine geological information from all European sea areas. The seabed substrate multiscale map was produced in March 2019. Note: The data may include some errors e.g. data discontinuities."
+    },
+    {
+        "title": "Seabed Accumulation Rates",
+        "original_source": "http://drive.emodnet-geology.eu:80/geoserver/gtk/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=seabed_accumulation_rates",
+        "digitwin_wms": "https://drive.emodnet-geology.eu/geoserver/gtk/wms",
+        "layer_name": "seabed_accumulation_rates",
+        "date": "",
+        "metadata": "Sedimentation rate map of the European Seas (e.g. the Baltic Sea, the North Sea, the Barents Sea, the sea around Iceland, the Iberian Coast, the Western Mediterranean Sea (within EU waters), the Adriatic Sea, the Ionian Sea and the Central Mediterranean Sea (within EU waters), the Aegean-Levantine Sea (within EU waters including the Turkish sector) and the Black Sea. The map is collated and compiled within the EMODnet-Geology project. Estimations of modern sedimentation rates (cm/year) are based mainly on the 137Cs and the 210Pb dating. The 137Cs could be used as a time-marker in the sediment column. In the sediment column the activity peak of 137Cs corresponds to the fallout of the Chernobyl nuclear power plant accident of April 1986. Some sedimentation rates were estimated from acoustic-seismic and sediment core data. This version was produced October 10th, 2016."
+    },
+    {
+        "title": "Energy model explanation",
+        "layer_name": "plan-monitor-maintenance",
+        "metadata": "Levelized Cost of Energy<br>The levelized cost of energy model  is taken from the report [1] from Witteveen & Bos in cooperation with ECN/TNO. They have defined the LCoE as a function of distance to port and bathymetry. For the bathymetry sources we use the Gebco [2] dataset which is a mosaic of several  data sources [3]. The dataset will be extended with local datasets such as the Europen EMODNet bathymetry [4] and  the Dutch Vaklodingen dataset.<br><br>Windspeed<br>Windspeeds are based  on the Global Wind Atlas 3.0 [5], a free, web-based application developed, owned and operated by the Technical University of Denmark (DTU). The Global Wind Atlas 3.0 is released in partnership with the World Bank Group, utilizing data provided by Vortex, using funding provided by the Energy Sector Management Assistance Program (ESMAP). This  dataset provides downscaled windspeeds  with an offshore coverage up to 200 km from the shoreline. Further offshore the dataset will be extended using the ERA5 daily windspeed estimates.<br><br>[1] Cost Evaluation of North Sea Offshore Wind Post 2030, 2019, E.C.M. Ruijgrok et al.<br>[2] GEBCO Compilation Group (2020) GEBCO 2020 Grid (doi:10.5285/a29c5465-b138-234d-e053-6c86abc040b9)<br>[3] <a href='https://www.gebco.net/about_us/acknowledgements/our_data_contributors/' target='_blank'>https://www.gebco.net/about_us/acknowledgements/our_data_contributors/</a><br>[4] <a href='https://www.emodnet-bathymetry.eu/data-products' target='_blank'>https://www.emodnet-bathymetry.eu/data-products</a><br>[5] <a href='https://globalwindatlas.info' target='_blank'>https://globalwindatlas.info</a><br>[6] <a href='https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5' target='_blank'>https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5</a>"
+    },
+    {
+        "title": "Oil & gas offshore platforms",
+        "layer_name": "oil_gas_offshore_instalations",
+        "metadata": "For all data that has been gathered during the process of exploration, identification, resource acquisition or storage of materials or geothermal heat, is the operator required to deliver a representative part of the data to the Ministry of Economical affairs (article 123 of the Mijnbouwwet). Chapter 7 of the Mijnbouwbesluit describes what data this applies to and what timeframe applies to it, whilst chapter 11 provides additional information.",
+        "digitwin_wms": "https://www.nlog.nl/arcgis/services/nlog/gdw_ng_facility_utm/MapServer/WMSServer"
+    }
+]

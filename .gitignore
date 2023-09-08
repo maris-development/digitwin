@@ -1,0 +1,8 @@
+js/backup/
+Thumbs.db
+*.sav
+info.php
+web.config
+*-min.js
+*.zip
+backup/
